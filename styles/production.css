@@ -1,0 +1,24 @@
+.production {
+  width: 100%;
+  padding: 80px 240px;
+  background: rgba(36, 36, 40, 1);
+}
+.production__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 350px);
+  gap: 20px;
+  margin-top: 30px;
+}
+.production__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 1650px) {
+  .production {
+    padding: 80px 100px;
+  }
+}

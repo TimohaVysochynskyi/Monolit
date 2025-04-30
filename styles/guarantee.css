@@ -1,0 +1,42 @@
+.guarantee {
+  padding: 80px 240px;
+}
+
+.guarantee__items-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.guarantee__item {
+  width: 45%;
+  display: flex;
+}
+.guarantee__item::before {
+  content: url(../assets/images/guarantee-line.png);
+  display: inline-block;
+}
+.guarantee__item-content {
+  padding: 8% 30px;
+}
+.guarantee__item-icon {
+  width: 50px;
+}
+.guarantee__item-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(21, 21, 25, 1);
+  margin-top: 20px;
+}
+.guarantee__item-text {
+  font-size: 17px;
+  color: rgba(21, 21, 25, 1);
+  line-height: 24px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1650px) {
+  .guarantee {
+    padding: 80px 100px;
+  }
+}
