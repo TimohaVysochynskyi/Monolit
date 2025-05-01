@@ -17,6 +17,8 @@
   object-position: center;
 }
 
+/* MEDIA QUERY */
+
 @media screen and (max-width: 1650px) {
   .production {
     padding: 80px 100px;
@@ -39,5 +41,23 @@
   .production__list {
     margin-top: 25px;
     grid-template-rows: repeat(3, 200px);
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .production__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 120px) !important;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .production {
+    padding: 20px;
+  }
+  .production__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 80px) !important;
   }
 }

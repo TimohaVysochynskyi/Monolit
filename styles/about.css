@@ -32,6 +32,8 @@
   text-transform: uppercase;
 }
 
+/* MEDIA QUERY */
+
 @media screen and (max-width: 1650px) {
   .about {
     padding: 80px 100px;
@@ -74,5 +76,21 @@
   }
   .about__text:last-child {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .about__content {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    padding: 20px;
+  }
+  .about__safe-img {
+    width: 180px;
   }
 }

@@ -13,7 +13,7 @@
     <link rel="canonical" href="https://vzlom.kiev.ua/ua/safes/index.php" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Сейфи купити у Києві | Надійні сейфи для дому та офісу — Моноліт">
+    <meta property="og:title" content="Сейфи Моноліт - для дому та офісу | Захист від злому">
     <meta property="og:description"
         content="Продаж зламостійких сейфів в Україні. Власне виробництво. Вогнетривкі та механічні сейфи. Гарантія 5 років.">
     <meta property="og:type" content="website">
@@ -29,6 +29,8 @@
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./styles/index.css" />
 
     <!-- Language -->
@@ -46,7 +48,7 @@
                 <div class="dropdown-wrapper">
                     <button class="dropdown__btn" type="button">
                         <span id="dropdown-selected">UA</span>
-                        <img src="./assets/icons/dropdown-arrow.svg" alt="Dropdown arrow" id="dropdown-arrow-1"
+                        <img src="./assets/icons/arrows/dropdown-arrow.webp" alt="Dropdown arrow" id="dropdown-arrow-1"
                             class="dropdown__arrow">
                     </button>
                     <ul class="dropdown__list" style="display: none;">
@@ -54,19 +56,19 @@
                         <li class="dropdown__item" data-lang="EN">EN</li>
                     </ul>
                 </div>
-                <ul class="header__list">
-                    <li class="header__item"><a href="#about" class="header__link">Про нас</a></li>
-                    <li class="header__item header__item-line">|</li>
-                    <li class="header__item"><a href="#feedbacks" class="header__link">Відгуки</a></li>
-                    <li class="header__item header__item-line">|</li>
-                    <li class="header__item"><a href="#articles" class="header__link">Статті</a></li>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#about" class="header__nav-link">Про нас</a></li>
+                    <li class="header__nav-item header__nav-item-line">|</li>
+                    <li class="header__nav-item"><a href="#feedbacks" class="header__nav-link">Відгуки</a></li>
+                    <li class="header__nav-item header__nav-item-line">|</li>
+                    <li class="header__nav-item"><a href="#articles" class="header__nav-link">Статті</a></li>
                 </ul>
-                <a href="#contacts" class="blue-btn header__btn-contact"><img src="./assets/icons/mail.svg" alt="Mail"
+                <a href="#contacts" class="blue-btn header__btn-contact"><img src="./assets/icons/mail.webp" alt="Mail"
                         class="header__btn-contact-icon">Контакти</a>
             </nav>
             <div class="header__nav-extra-wrapper">
                 <a href="/" class="logo-wrapper">
-                    <img src="./assets/images/logo.png" alt="Логотип" class="logo-img">
+                    <img src="./assets/logos/logo.webp" alt="Logo" class="logo-img">
                     <div class="logo__text-wrapper">
                         <span class="logo__title">Моноліт</span>
                         <span class="logo__subtitle">Двері та сейфи</span>
@@ -75,31 +77,100 @@
                 <nav class="header__nav-extra">
                     <ul class="header__nav-extra-list">
                         <li class="header__nav-extra-item"><a href="#doors" class="header__nav-extra-btn"><img
-                                    src="./assets/icons/hero/door.svg" alt="Doors">Броньовані
+                                    src="./assets/icons/header/door.webp" alt="Doors">Броньовані
                                 двері</a>
                         </li>
                         <li class="header__nav-extra-item"><a href="#safes" class="header__nav-extra-btn"><img
-                                    src="./assets/icons/hero/safe.svg" alt="Doors">Сейфи</a>
+                                    src="./assets/icons/header/safe.webp" alt="Doors">Сейфи</a>
                         </li>
                     </ul>
                     <ul class="header__nav-extra-list">
                         <li class="header__nav-extra-item"><a href="tel:+380980002004"
-                                class="header__nav-extra-link"><img src="./assets/icons/phone.svg" alt="Phone"
+                                class="header__nav-extra-link"><img src="./assets/icons/phone.webp" alt="Phone"
                                     class="header__nav-extra-icon"> +38(098)000-20-04</a>
                         </li>
                         <li class="header__nav-extra-item"><a href="tel:+380442231503"
-                                class="header__nav-extra-link"><img src="./assets/icons/phone.svg" alt="Phone"
+                                class="header__nav-extra-link"><img src="./assets/icons/phone.webp" alt="Phone"
                                     class="header__nav-extra-icon"> +38(044)223-15-03</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="header__path-wrapper">
-                <div class="header__path">
-                    <a href="/" class="header__path-link">Головна</a>
-                    <span class="header__path-line">|</span>
-                    <a href="#safes" class="header__path-link header__path-link-secondary">Сейфи</a>
+        </div>
+
+        <div class="header__top-mobile">
+            <div class="header__top-menu-mobile">
+                <a href="/" class="logo-wrapper">
+                    <img src="./assets/logos/logo.webp" alt="Логотип" class="logo-img">
+                    <div class="logo__text-wrapper">
+                        <span class="logo__title">Моноліт</span>
+                        <span class="logo__subtitle">Двері та сейфи</span>
+                    </div>
+                </a>
+                <div class="header__top-menu-col-mobile">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown__btn" type="button">
+                            <span id="dropdown-selected">UA</span>
+                            <img src="./assets/icons/arrows/dropdown-arrow.webp" alt="Dropdown arrow"
+                                id="dropdown-arrow-1" class="dropdown__arrow">
+                        </button>
+                        <ul class="dropdown__list" style="display: none;">
+                            <li class="dropdown__item" data-lang="UA">UA</li>
+                            <li class="dropdown__item" data-lang="EN">EN</li>
+                        </ul>
+                    </div>
+                    <div class="burger-wrapper">
+                        <button type="button" class="burger" id="burger-btn"><img
+                                src="./assets/icons/header/burger.webp" alt="Burgermenu button" class="burger-img"
+                                id="burger-img"></button>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <img src="./assets/images/down-line.webp" alt="Line" class="header__top-line-mobile">
+
+        <nav class="header__nav-mobile" id="header__nav-mobile">
+            <ul class="header__nav-list-mobile">
+                <li class="header__nav-item-mobile">
+                    <a href="#" class="header__nav-link header__nav-link-mobile">Броньовані двері</a>
+                </li>
+                <li class="header__nav-item-mobile">
+                    <a href="#" class="header__nav-link header__nav-link-mobile">Сейфи</a>
+                </li>
+                <li class="header__nav-item-mobile">
+                    <a href="#" class="header__nav-link header__nav-link-mobile">Про нас</a>
+                </li>
+                <li class="header__nav-item-mobile">
+                    <a href="#" class="header__nav-link header__nav-link-mobile">Відгуки</a>
+                </li>
+                <li class="header__nav-item-mobile">
+                    <a href="#" class="header__nav-link header__nav-link-mobile">Статті</a>
+                </li>
+                <li class="header__nav-item-mobile">
+                    <a href="#" class="header__nav-link header__nav-link-mobile">Контакти</a>
+                </li>
+            </ul>
+            <div class="header__nav-phones-wrapper">
+                <img src="./assets/icons/phone.webp" alt="Phones" class="header__nav-phone-icon">
+                <a href="tel:+380980002004" class="header__nav-link header__nav-phone-link">+38(098)000-20-04</a>
+                <a href="tel:+380442231503" class="header__nav-link header__nav-phone-link">+38(044)223-15-03</a>
+            </div>
+            <div class="header__nav-socials-wrapper">
+                <a href="#" class="header__nav-social-link">
+                    <img src="./assets/icons/socials/telegram-colored.webp" alt="Telegram"
+                        class="header__nav-social-icon">
+                </a>
+                <a href="#" class="header__nav-social-link">
+                    <img src="./assets/icons/socials/viber-colored.webp" alt="Viber" class="header__nav-social-icon">
+                </a>
+            </div>
+        </nav>
+
+        <div class="header__path-wrapper">
+            <div class="header__path">
+                <a href="/" class="header__path-link">Головна</a>
+                <span class="header__path-line">|</span>
+                <a href="#safes" class="header__path-link header__path-link-secondary">Сейфи</a>
             </div>
         </div>
 
@@ -110,15 +181,15 @@
 
             <ul class="hero__features-list">
                 <li class="hero__features-item">
-                    <img src="./assets/icons/hero/security.png" alt="Security" class="hero__features-icon">
+                    <img src="./assets/icons/header/security.webp" alt="Security" class="hero__features-icon">
                     <span class="hero__features-text">високий рівень захисту</span>
                 </li>
                 <li class="hero__features-item">
-                    <img src="./assets/icons/hero/flame.png" alt="Flame" class="hero__features-icon">
+                    <img src="./assets/icons/header/flame.webp" alt="Flame" class="hero__features-icon">
                     <span class="hero__features-text">високі вогнетривкі показники</span>
                 </li>
                 <li class="hero__features-item">
-                    <img src="./assets/icons/hero/shield.png" alt="Security" class="hero__features-icon">
+                    <img src="./assets/icons/header/shield.webp" alt="Locks" class="hero__features-icon">
                     <span class="hero__features-text">блокування механічними замками до класу "D"</span>
                 </li>
             </ul>
@@ -140,7 +211,7 @@
                     <h3 class="catalogue__item-title">Моноліт Класик</h3>
                     <p class="catalogue__item-price">від 124600 грн.</p>
                     <a href="/ua/safes/monolit-classic" class="catalogue__item-btn catalogue__item-btn-dark">
-                        <img src="./assets/icons/arrow-right-light.svg" alt="Перейти до сейфа">
+                        <img src="./assets/icons/arrows/arrow-right-light.webp" alt="Перейти до сейфа">
                     </a>
                 </div>
             </div>
@@ -151,7 +222,7 @@
                     <h3 class="catalogue__item-title catalogue__item-title-light">Моноліт Класик</h3>
                     <p class="catalogue__item-price catalogue__item-price-light">від 124600 грн.</p>
                     <a href="/ua/safes/monolit-classic" class="catalogue__item-btn catalogue__item-btn-light">
-                        <img src="./assets/icons/arrow-right-dark.svg" alt="Перейти до сейфа">
+                        <img src="./assets/icons/arrows/arrow-right-dark.webp" alt="Перейти до сейфа">
                     </a>
                 </div>
             </div>
@@ -195,7 +266,23 @@
 
     <!-- SLIDER -->
     <section class="slider-wrapper">
-        <!-- Доробити -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 1"></div>
+                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 2"></div>
+                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 3"></div>
+                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 4"></div>
+                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 5"></div>
+            </div>
+
+            <!-- Навігація -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Пагінація -->
+            <div class="swiper-pagination"></div>
+        </div>
+
     </section>
 
 
@@ -210,12 +297,12 @@
             <img src="./assets/images/production/1.webp" alt="Production image" class="production__img">
             <img src="./assets/images/production/2.webp" alt="Production image" class="production__img">
             <img src="./assets/images/production/3.webp" alt="Production image" class="production__img">
-            <img src="./assets/images/production/4.webp" alt="Production image" class="production__img">
-            <img src="./assets/images/production/5.webp" alt="Production image" class="production__img">
-            <img src="./assets/images/production/6.webp" alt="Production image" class="production__img">
-            <img src="./assets/images/production/7.webp" alt="Production image" class="production__img">
-            <img src="./assets/images/production/8.webp" alt="Production image" class="production__img">
-            <img src="./assets/images/production/9.webp" alt="Production image" class="production__img">
+            <img src="./assets/images/production/3.webp" alt="Production image" class="production__img">
+            <img src="./assets/images/production/1.webp" alt="Production image" class="production__img">
+            <img src="./assets/images/production/2.webp" alt="Production image" class="production__img">
+            <img src="./assets/images/production/1.webp" alt="Production image" class="production__img">
+            <img src="./assets/images/production/2.webp" alt="Production image" class="production__img">
+            <img src="./assets/images/production/3.webp" alt="Production image" class="production__img">
         </div>
     </section>
 
@@ -231,7 +318,7 @@
             <div class="guarantee__item">
 
                 <div class="guarantee__item-content">
-                    <img src="./assets/icons/guarantee/safe.svg" alt="Guarantee icon" class="guarantee__item-icon">
+                    <img src="./assets/icons/safe.webp" alt="Guarantee icon" class="guarantee__item-icon">
                     <h3 class="guarantee__item-title">Всі моделі виготовляються індивідуально!</h3>
                     <p class="guarantee__item-text">
                         Ми не використовуємо конвеєрні методи виробництва та будь-яку стандартизацію виробничого
@@ -244,7 +331,7 @@
             <div class="guarantee__item">
 
                 <div class="guarantee__item-content">
-                    <img src="./assets/icons/guarantee/insurance.svg" alt="Guarantee icon" class="guarantee__item-icon">
+                    <img src="./assets/icons/insurance.webp" alt="Guarantee icon" class="guarantee__item-icon">
                     <h3 class="guarantee__item-title">На всі сейфи встановлено офіційну гарантію – 5 років.</h3>
                     <p class="guarantee__item-text">
                         Сервісна служба компанії "ТОВ Моноліт - Двері та Сейфи" надає післягарантійне обслуговування,
@@ -267,7 +354,7 @@
             <div class="footer__logos-wrapper">
                 <div class="footer__logo-wrapper">
                     <a href="/" class="logo-wrapper">
-                        <img src="./assets/images/logo.png" alt="Логотип" class="logo-img">
+                        <img src="./assets/logos/logo.webp" alt="Логотип" class="logo-img">
                         <div class="logo__text-wrapper">
                             <span class="logo__title">Моноліт</span>
                             <span class="logo__subtitle">Двері та сейфи</span>
@@ -275,19 +362,36 @@
                     </a>
                     <p class="footer__logo-text">Український виробник броньованих дверей та зломостійких сейфів</p>
                 </div>
-                <div>
+                <div class="footer__logos-wrapper">
                     <div class="footer__logo-stamps-wrapper">
-                        <img src="./assets/images/footer/iso.png" alt="Certified company" class="footer__iso-logo">
+                        <img src="./assets/logos/iso.webp" alt="Certified company" class="footer__iso-logo">
                         <div class="footer__dun-logo-wrapper">
-                            <img src="./assets/images/footer/dun&bradstreet.png" alt="Dun&bradstreet"
+                            <img src="./assets/logos/dun&bradstreet.webp" alt="Dun&bradstreet"
                                 class="footer__dun-logo-img">
                             <span class="footer__dun-logo-text">D-U-N-S: 49-862-0923</span>
                         </div>
                     </div>
                     <a href="#" class="footer__policy-link">Політика Конфіденційності</a>
-
                 </div>
 
+                <div class="footer__logo-wrapper-col-mobile">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown__btn" type="button">
+                            <span id="dropdown-selected">UA</span>
+                            <img src="./assets/images/down-line.webp" alt="Dropdown arrow" id="dropdown-arrow-1"
+                                class="dropdown__arrow">
+                        </button>
+                        <ul class="dropdown__list" style="display: none;">
+                            <li class="dropdown__item" data-lang="UA">UA</li>
+                            <li class="dropdown__item" data-lang="EN">EN</li>
+                        </ul>
+                    </div>
+                    <img src="./assets/logos/iso.webp" alt="Certified company" class="footer__iso-logo">
+                </div>
+            </div>
+            <div class="footer__dun-logo-wrapper-mobile">
+                <img src="./assets/logos/dun&bradstreet.webp" alt="Dun&bradstreet" class="footer__dun-logo-img">
+                <span class="footer__dun-logo-text">D-U-N-S: 49-862-0923</span>
             </div>
             <div class="footer__content">
                 <nav class="footer__nav">
@@ -319,7 +423,7 @@
                                 <span class="footer__contacts-title">Контакти</span>
                             </li>
                             <li class="footer__contacts-item">
-                                <img src="./assets/icons/location.svg" alt="Location"
+                                <img src="./assets/icons/location.webp" alt="Location"
                                     class="footer__contacts-item-icon">
                                 <a href="#" class="footer__contacts-link">
                                     <span class="footer__contacts-item-section">
@@ -328,7 +432,7 @@
                                 </a>
                             </li>
                             <li class="footer__contacts-item">
-                                <img src="./assets/icons/phone.svg" alt="Phone" class="footer__contacts-item-icon">
+                                <img src="./assets/icons/phone.webp" alt="Phone" class="footer__contacts-item-icon">
                                 <div class="footer__contacts-item-col">
                                     <a href="tel:+380442231503" class="footer__contacts-link">
                                         <span class="footer__contacts-item-section">
@@ -344,7 +448,7 @@
 
                             </li>
                             <li class="footer__contacts-item">
-                                <img src="./assets/icons/mail2.svg" alt="Mail" class="footer__contacts-item-icon">
+                                <img src="./assets/icons/mail2.webp" alt="Mail" class="footer__contacts-item-icon">
                                 <a href="mailto:info@vzlom.kiev.ua" class="footer__contacts-link">
                                     <span class="footer__contacts-item-section">
                                         info@vzlom.kiev.ua
@@ -352,7 +456,7 @@
                                 </a>
                             </li>
                             <li class="footer__contacts-item">
-                                <img src="./assets/icons/time.svg" alt="Timetable" class="footer__contacts-item-icon">
+                                <img src="./assets/icons/time.webp" alt="Timetable" class="footer__contacts-item-icon">
                                 <div class="footer__contacts-item-col">
                                     <span class="footer__contacts-item-section">
                                         Пн - Пт: 08:00 - 19:00
@@ -368,75 +472,76 @@
                         <ul class="footer__socials-list">
                             <li class="footer__socials-item">
                                 <a href="#" class="footer__socials-link">
-                                    <img src="./assets/icons/socials/facebook.svg" alt="Facebook"
+                                    <img src="./assets/icons/socials/facebook.webp" alt="Facebook"
                                         class="footer__socials-icon">
                                 </a>
                             </li>
                             <li class="footer__socials-item">
                                 <a href="#" class="footer__socials-link">
-                                    <img src="./assets/icons/socials/instagram.svg" alt="Instgram"
+                                    <img src="./assets/icons/socials/instagram.webp" alt="Instgram"
                                         class="footer__socials-icon">
                                 </a>
                             </li>
                             <li class="footer__socials-item">
                                 <a href="#" class="footer__socials-link">
-                                    <img src="./assets/icons/socials/linkedin.svg" alt="Linkedin"
+                                    <img src="./assets/icons/socials/linkedin.webp" alt="Linkedin"
                                         class="footer__socials-icon">
                                 </a>
                             </li>
                             <li class="footer__socials-item">
                                 <a href="#" class="footer__socials-link">
-                                    <img src="./assets/icons/socials/twitter.svg" alt="Twitter"
+                                    <img src="./assets/icons/socials/twitter.webp" alt="Twitter"
                                         class="footer__socials-icon">
                                 </a>
                             </li>
                             <li class="footer__socials-item">
                                 <a href="#" class="footer__socials-link">
-                                    <img src="./assets/icons/socials/youtube.svg" alt="Youtube"
+                                    <img src="./assets/icons/socials/youtube.webp" alt="Youtube"
                                         class="footer__socials-icon">
                                 </a>
                             </li>
                             <li class="footer__socials-item">
                                 <a href="#" class="footer__socials-link">
-                                    <img src="./assets/icons/socials/tik-tok.svg" alt="Tik-tok"
+                                    <img src="./assets/icons/socials/tik-tok.webp" alt="Tik-tok"
                                         class="footer__socials-icon">
                                 </a>
                             </li>
                             <li class="footer__socials-item">
                                 <a href="#" class="footer__socials-link">
-                                    <img src="./assets/icons/socials/telegram.svg" alt="Telegram"
+                                    <img src="./assets/icons/socials/telegram.webp" alt="Telegram"
                                         class="footer__socials-icon">
                                 </a>
                             </li>
                         </ul>
 
-                        <div class="dropdown-wrapper">
+                        <div class="dropdown-wrapper dropdown-wrapper-desktop">
                             <button class="dropdown__btn" type="button">
                                 <span id="dropdown-selected">UA</span>
-                                <img src="./assets/icons/dropdown-arrow.svg" alt="Dropdown arrow"
-                                    class="dropdown__arrow">
+                                <img src="./assets/icons/arrows/dropdown-arrow.webp" alt="Dropdown arrow"
+                                    id="dropdown-arrow-1" class="dropdown__arrow">
                             </button>
-                            <!-- <ul class="dropdown__list">
-                                <li class="dropdown__item">EN</li>
-                                <li class="dropdown__item">RU</li>
-                            </ul> -->
+                            <ul class="dropdown__list" style="display: none;">
+                                <li class="dropdown__item" data-lang="UA">UA</li>
+                                <li class="dropdown__item" data-lang="EN">EN</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <a href="#" class="footer__policy-link footer__policy-link-mobile">Політика Конфіденційності</a>
         <div class="footer__bottom">
-            <img src="./assets/images/footer-line.png" alt="Footer line" class="footer__line">
+            <img src="./assets/images/down-line.webp" alt="Footer line" class="footer__line">
             <div class="footer__partners-list">
-                <img src="./assets/images/footer/partners/multlock.png" alt="MUL-T-LOCK" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/abloy.png" alt="ALBOY" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/evva.png" alt="EVVA" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/cisa.png" alt="CISA" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/iseo.png" alt="ISEO" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/tokoz.png" alt="TOKOZ" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/dom.png" alt="DOM" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/mottura.png" alt="MOTTURA" class="footer__partner-logo">
-                <img src="./assets/images/footer/partners/rb.png" alt="RB-LOCKS" class="footer__partner-logo">
+                <img src="./assets/logos/partners/multlock.webp" alt="MUL-T-LOCK" class="footer__partner-logo">
+                <img src="./assets/logos/partners/abloy.webp" alt="ALBOY" class="footer__partner-logo">
+                <img src="./assets/logos/partners/evva.webp" alt="EVVA" class="footer__partner-logo">
+                <img src="./assets/logos/partners/cisa.webp" alt="CISA" class="footer__partner-logo">
+                <img src="./assets/logos/partners/iseo.webp" alt="ISEO" class="footer__partner-logo">
+                <img src="./assets/logos/partners/tokoz.webp" alt="TOKOZ" class="footer__partner-logo">
+                <img src="./assets/logos/partners/dom.webp" alt="DOM" class="footer__partner-logo">
+                <img src="./assets/logos/partners/mottura.webp" alt="MOTTURA" class="footer__partner-logo">
+                <img src="./assets/logos/partners/rb.webp" alt="RB-LOCKS" class="footer__partner-logo">
             </div>
             <div class="footer__copyright-wrapper">
                 <span class="footer__copyright">© 2010-2024 © "ТОВ Моноліт - Двері та Сейфи"</span>
@@ -448,7 +553,7 @@
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "ТОВ Моноліт - Двері та Сейфи",
-              "image": "https://vzlom.kiev.ua/assets/images/logo.png",
+              "image": "https://vzlom.kiev.ua/assets/logos/logo.webp",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "вул. Віскозна, 3Б",
@@ -461,7 +566,10 @@
             </script>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/slider.js"></script>
 </body>
 
 </html>

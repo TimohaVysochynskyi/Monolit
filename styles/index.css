@@ -3,6 +3,7 @@
 @import url(header.css);
 @import url(catalogue.css);
 @import url(about.css);
+@import url(slider.css);
 @import url(production.css);
 @import url(guarantee.css);
 @import url(footer.css);
@@ -12,4 +13,5 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }

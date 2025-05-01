@@ -102,6 +102,12 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.stop-scrolling {
+  overflow: hidden;
+}
+
+/* MEDIA QUERY */
+
 @media screen and (max-width: 1440px) {
   .section__subtitle {
     font-size: 42px;
@@ -163,5 +169,38 @@
   .section__subtitle {
     font-size: 28px;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .section__header {
+    width: 100%;
+  }
+  .section__subtitle {
+    font-size: 24px;
+  }
+  .dropdown-wrapper-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo-wrapper {
+    gap: 5px;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  .logo__title {
+    font-size: 16px;
+  }
+  .logo__subtitle {
+    font-size: 10px;
+  }
+  .section__title {
+    font-size: 15px;
+  }
+  .section__subtitle {
+    font-size: 20px;
   }
 }
