@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.toggle("stop-scrolling");
 
     burgerImg.src = burgerImg.src.endsWith("burger.png")
-      ? "./assets/images/cross.png"
-      : "./assets/images/burger.png";
+      ? "./assets/icons/header/cross.png"
+      : "./assets/icons/header/burger.png";
   });
 
   document.addEventListener("click", function (e) {
