@@ -67,3 +67,40 @@
     padding: 80px 100px;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .catalogue {
+    padding: 60px;
+  }
+  .catalogue__items-wrapper {
+    margin-top: 30px;
+  }
+  .catalogue__item {
+    height: 500px;
+    padding: 25px;
+  }
+  .catalogue__item-description {
+    gap: 12px;
+  }
+  .catalogue__item-title {
+    font-size: 20px;
+  }
+  .catalogue__item-price {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .catalogue {
+    padding: 30px;
+  }
+  .catalogue__items-wrapper {
+    margin-top: 25px;
+  }
+  .catalogue__item {
+    height: 480px;
+  }
+  .catalogue__item-price {
+    font-size: 17px;
+  }
+}

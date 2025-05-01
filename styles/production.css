@@ -22,3 +22,22 @@
     padding: 80px 100px;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .production {
+    padding: 60px;
+  }
+  .production__list {
+    grid-template-rows: repeat(3, 250px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .production {
+    padding: 30px;
+  }
+  .production__list {
+    margin-top: 25px;
+    grid-template-rows: repeat(3, 200px);
+  }
+}

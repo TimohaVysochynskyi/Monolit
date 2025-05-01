@@ -19,10 +19,11 @@
   margin-top: 20px;
   max-width: 320px;
 }
-.footer__logo-wrapper:nth-child(2) {
+.footer__logo-stamps-wrapper {
   display: flex;
   align-items: center;
   gap: 30px;
+  margin-bottom: 20px;
 }
 .footer__policy-link {
   font-size: 14px;
@@ -145,6 +146,15 @@
   width: auto;
   object-fit: contain;
 }
+.footer__dun-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.footer__dun-logo-text {
+  font-size: 14px;
+  color: #fff;
+  line-height: 36px;
+}
 .footer__copyright-wrapper {
   width: 100%;
   text-align: center;
@@ -158,5 +168,112 @@
 @media screen and (max-width: 1650px) {
   .footer {
     padding: 80px 100px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__content,
+  .footer__nav,
+  .footer__contacts-wrapper {
+    gap: 0 20px;
+    justify-content: space-evenly;
+  }
+  .footer__nav {
+    width: auto;
+  }
+  .footer__nav-list:first-child {
+    width: auto;
+  }
+  .footer__nav-list:last-child {
+    width: auto;
+  }
+  .footer__contacts-col:first-child {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 60px;
+  }
+  .footer__top {
+    gap: 0 50px;
+  }
+  .footer__logo-text {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .footer__logo-wrapper:nth-child(2) {
+    gap: 15px;
+  }
+  .footer__iso-logo {
+    width: 70px;
+  }
+  .footer__dun-logo-img {
+    width: 170px;
+  }
+  .footer__nav-link,
+  .footer__contacts-link,
+  .footer__contacts-item-col {
+    font-size: 14px;
+  }
+  .footer__contacts-item-col {
+    line-height: 22px;
+  }
+  .footer__contacts-col:last-child {
+    min-width: 90px;
+  }
+  .footer__socials-list {
+    width: 90px;
+    gap: 10px;
+  }
+  .footer__socials-item {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__socials-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .footer__bottom {
+    margin-top: 40px;
+  }
+  .footer__partners-list {
+    margin: 30px 0;
+  }
+  .footer__partner-logo {
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 30px;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__dun-logo-text {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .footer__logos-wrapper {
+    flex-direction: row;
+  }
+  .footer__logo-stamps-wrapper {
+    margin-bottom: 10px;
+  }
+  .footer__content {
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  .footer__nav {
+    width: 45%;
+    justify-content: space-between;
+  }
+  .footer__partners-list {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
 }

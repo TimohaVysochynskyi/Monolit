@@ -101,3 +101,67 @@
 .section__subtitle-light {
   color: rgba(255, 255, 255, 1);
 }
+
+@media screen and (max-width: 1440px) {
+  .section__subtitle {
+    font-size: 42px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .logo-wrapper {
+    min-width: 215px;
+  }
+  .logo-img {
+    width: 80px;
+  }
+  .logo__title {
+    font-size: 22px;
+  }
+  .logo__subtitle {
+    font-size: 13px;
+  }
+  .blue-btn {
+    padding: 10px 12px;
+  }
+  .section__title {
+    font-size: 16px;
+  }
+  .section__subtitle {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-wrapper {
+    min-width: 185px;
+  }
+  .logo-img {
+    width: 60px;
+  }
+  .logo__title {
+    font-size: 18px;
+  }
+  .logo__subtitle {
+    font-size: 12px;
+  }
+  .blue-btn {
+    padding: 8px;
+    font-size: 11px;
+  }
+  .dropdown-wrapper,
+  .dropdown__list {
+    width: 50px;
+    background-color: rgba(21, 21, 25, 1);
+  }
+  .dropdown__btn,
+  .dropdown__item {
+    height: 24px;
+    font-size: 12px;
+  }
+  .section__subtitle {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+}
