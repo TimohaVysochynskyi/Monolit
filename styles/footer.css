@@ -127,6 +127,7 @@
 .footer__socials-icon {
   width: 20px;
   height: 20px;
+  object-fit: contain;
 }
 .footer__bottom {
   margin-top: 60px;
@@ -171,6 +172,7 @@
   flex-direction: column;
   align-items: end;
   gap: 20px;
+  min-width: 70px;
 
   display: none;
 }
