@@ -110,6 +110,7 @@
   flex-wrap: wrap;
   gap: 10px;
   width: 110px;
+  overflow: hidden;
 }
 .footer__socials-item {
   width: 48px;

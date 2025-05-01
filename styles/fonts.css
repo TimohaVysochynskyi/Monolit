@@ -1,8 +1,10 @@
 @font-face {
   font-family: "Muller-Regular";
   src: url(../fonts/MullerNextTrial/MullerNextTrial-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "Muller-Thin";
   src: url(../fonts/MullerNextTrial/MullerNextTrial-Thin.ttf);
+  font-display: swap;
 }
