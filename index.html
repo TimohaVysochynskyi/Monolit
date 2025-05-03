@@ -54,17 +54,18 @@
         <div class="header__bg"></div>
         <div class="header__top">
             <nav class="header__nav">
-                <div class="dropdown-wrapper">
+                <div class="dropdown">
                     <button class="dropdown__btn" type="button">
-                        <span id="dropdown-selected">UA</span>
-                        <img src="./assets/icons/arrows/dropdown-arrow.png" alt="Dropdown arrow" id="dropdown-arrow-1"
-                            class="dropdown__arrow">
+                        <span class="dropdown__selected">UA</span>
+                        <img src="./assets/icons/arrows/dropdown-arrow.png" alt="Dropdown arrow"
+                            class="dropdown__arrow" />
                     </button>
-                    <ul class="dropdown__list" style="display: none;">
+                    <ul class="dropdown__list">
                         <li class="dropdown__item" data-lang="UA">UA</li>
                         <li class="dropdown__item" data-lang="EN">EN</li>
                     </ul>
                 </div>
+
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#about" class="header__nav-link">Про нас</a></li>
                     <li class="header__nav-item header__nav-item-line">|</li>
@@ -85,22 +86,20 @@
                 </a>
                 <nav class="header__nav-extra">
                     <ul class="header__nav-extra-list">
-                        <li class="header__nav-extra-item"><a href="#doors" class="header__nav-extra-btn"><img
-                                    src="./assets/icons/header/door.png" alt="Doors" loading="eager">Броньовані
+                        <li><a href="#doors" class="header__nav-extra-btn"><img src="./assets/icons/header/door.png"
+                                    alt="Doors" loading="eager">Броньовані
                                 двері</a>
                         </li>
-                        <li class="header__nav-extra-item"><a href="#safes" class="header__nav-extra-btn"><img
-                                    src="./assets/icons/header/safe.png" alt="Doors" loading="eager">Сейфи</a>
+                        <li><a href="#safes" class="header__nav-extra-btn"><img src="./assets/icons/header/safe.png"
+                                    alt="Doors" loading="eager">Сейфи</a>
                         </li>
                     </ul>
                     <ul class="header__nav-extra-list">
-                        <li class="header__nav-extra-item"><a href="tel:+380980002004"
-                                class="header__nav-extra-link"><img src="./assets/icons/phone.png" alt="Phone"
-                                    class="header__nav-extra-icon" loading="eager"> +38(098)000-20-04</a>
+                        <li><a href="tel:+380980002004" class="header__nav-extra-link"><img
+                                    src="./assets/icons/phone.png" alt="Phone" loading="eager"> +38(098)000-20-04</a>
                         </li>
-                        <li class="header__nav-extra-item"><a href="tel:+380442231503"
-                                class="header__nav-extra-link"><img src="./assets/icons/phone.png" alt="Phone"
-                                    class="header__nav-extra-icon" loading="eager"> +38(044)223-15-03</a>
+                        <li><a href="tel:+380442231503" class="header__nav-extra-link"><img
+                                    src="./assets/icons/phone.png" alt="Phone" loading="eager"> +38(044)223-15-03</a>
                         </li>
                     </ul>
                 </nav>
@@ -117,17 +116,18 @@
                     </div>
                 </a>
                 <div class="header__top-menu-col-mobile">
-                    <div class="dropdown-wrapper">
+                    <div class="dropdown">
                         <button class="dropdown__btn" type="button">
-                            <span id="dropdown-selected">UA</span>
+                            <span class="dropdown__selected">UA</span>
                             <img src="./assets/icons/arrows/dropdown-arrow.png" alt="Dropdown arrow"
-                                id="dropdown-arrow-1" class="dropdown__arrow">
+                                class="dropdown__arrow" />
                         </button>
-                        <ul class="dropdown__list" style="display: none;">
+                        <ul class="dropdown__list">
                             <li class="dropdown__item" data-lang="UA">UA</li>
                             <li class="dropdown__item" data-lang="EN">EN</li>
                         </ul>
                     </div>
+
                     <div class="burger-wrapper">
                         <button type="button" class="burger" id="burger-btn"><img src="./assets/icons/header/burger.png"
                                 alt="Burgermenu button" class="burger-img" id="burger-img"></button>
@@ -220,18 +220,26 @@
                     <h3 class="catalogue__item-title">Моноліт Класик</h3>
                     <p class="catalogue__item-price">від 124600 грн.</p>
                     <a href="/ua/safes/monolit-classic" class="catalogue__item-btn catalogue__item-btn-dark">
-                        <img src="./assets/icons/arrows/arrow-right-light.png" alt="Перейти до сейфа">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="catalogue__item-btn-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
                     </a>
                 </div>
             </div>
-            <div class="catalogue__item catalogue__item-dark">
+            <div class="catalogue__item">
                 <img src="./assets/images/safes/light.webp" alt="Сейф Моноліт Класик – світлий"
                     class="catalogue__item-img">
                 <div class="catalogue__item-description">
-                    <h3 class="catalogue__item-title catalogue__item-title-light">Моноліт Класик</h3>
-                    <p class="catalogue__item-price catalogue__item-price-light">від 124600 грн.</p>
-                    <a href="/ua/safes/monolit-classic" class="catalogue__item-btn catalogue__item-btn-light">
-                        <img src="./assets/icons/arrows/arrow-right-dark.png" alt="Перейти до сейфа">
+                    <h3 class="catalogue__item-title">Моноліт Класик</h3>
+                    <p class="catalogue__item-price">від 124600 грн.</p>
+                    <a href="/ua/safes/monolit-classic" class="catalogue__item-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="catalogue__item-btn-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -275,25 +283,74 @@
 
 
     <!-- SLIDER -->
-    <section class="slider-wrapper">
+    <section class="swiper-wrapper">
         <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 1" loading="lazy"></div>
-                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 2" loading="lazy"></div>
-                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 3" loading="lazy"></div>
-                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 4" loading="lazy"></div>
-                <div class="swiper-slide"><img src="./assets/images/slide.webp" alt="Слайд 5" loading="lazy"></div>
+            <div class="swiper__slides-wrapper">
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/lGlib3tsZiw?si=wDfMYmwLncQrceDI&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/XPjs6RHIoEU?si=TaqTiwqPLxiTw4d5&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/5ZxE6h97YCY?si=wDfMYmwLncQrceDI&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/TvqIKq6foZA?si=wDfMYmwLncQrceDI&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/L4Tn2mgWmYs?si=wDfMYmwLncQrceDI&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/Cc8RH_YrLmw?si=wDfMYmwLncQrceDI&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/Fw_dFjEuEZU?si=wDfMYmwLncQrceDI&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="swiper__slide">
+                    <iframe src="https://www.youtube-nocookie.com/embed/13u2vSiqwys?si=wDfMYmwLncQrceDI&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="swiper__navigation">
+                <div class="swiper__btns-wrapper">
+                    <div class="swiper__btn swiper__btn-prev">
+                        <img src="./assets/icons/arrows/right-arrow.png" alt="Стрілка вліво">
+                    </div>
+                    <div class="swiper__btn swiper__btn-next">
+                        <img src="./assets/icons/arrows/right-arrow.png" alt="Стрілка вправо">
+                    </div>
+                </div>
+
+                <div class="swiper__pagination"></div>
             </div>
 
-            <!-- Навігація -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- Пагінація -->
-            <div class="swiper-pagination"></div>
         </div>
-
     </section>
+
 
 
     <!-- PRODUCTION -->
@@ -307,12 +364,21 @@
             <img src="./assets/images/production/1.webp" alt="Production image" class="production__img" loading="lazy">
             <img src="./assets/images/production/2.webp" alt="Production image" class="production__img" loading="lazy">
             <img src="./assets/images/production/3.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/3.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/1.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/2.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/1.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/2.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/3.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/4.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/5.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/6.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/7.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/8.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/9.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/10.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/11.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/12.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/13.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/14.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/15.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/16.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/17.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/18.webp" alt="Production image" class="production__img" loading="lazy">
         </div>
     </section>
 
@@ -387,13 +453,13 @@
                 </div>
 
                 <div class="footer__logo-wrapper-col-mobile">
-                    <div class="dropdown-wrapper">
+                    <div class="dropdown">
                         <button class="dropdown__btn" type="button">
-                            <span id="dropdown-selected">UA</span>
+                            <span class="dropdown__selected">UA</span>
                             <img src="./assets/icons/arrows/dropdown-arrow.png" alt="Dropdown arrow"
-                                id="dropdown-arrow-1" class="dropdown__arrow" loading="lazy">
+                                class="dropdown__arrow" />
                         </button>
-                        <ul class="dropdown__list" style="display: none;">
+                        <ul class="dropdown__list">
                             <li class="dropdown__item" data-lang="UA">UA</li>
                             <li class="dropdown__item" data-lang="EN">EN</li>
                         </ul>
@@ -530,17 +596,18 @@
                             </li>
                         </ul>
 
-                        <div class="dropdown-wrapper dropdown-wrapper-desktop">
+                        <div class="dropdown dropdown-desktop">
                             <button class="dropdown__btn" type="button">
-                                <span id="dropdown-selected">UA</span>
+                                <span class="dropdown__selected">UA</span>
                                 <img src="./assets/icons/arrows/dropdown-arrow.png" alt="Dropdown arrow"
-                                    id="dropdown-arrow-1" class="dropdown__arrow">
+                                    class="dropdown__arrow" />
                             </button>
-                            <ul class="dropdown__list" style="display: none;">
+                            <ul class="dropdown__list">
                                 <li class="dropdown__item" data-lang="UA">UA</li>
                                 <li class="dropdown__item" data-lang="EN">EN</li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -583,8 +650,6 @@
             }
             </script>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/slider.js"></script>

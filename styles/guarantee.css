@@ -63,9 +63,6 @@
   .guarantee {
     padding: 60px;
   }
-  .production__list {
-    grid-template-rows: repeat(3, 250px);
-  }
   .guarantee__item-content {
     padding-right: 0;
   }
