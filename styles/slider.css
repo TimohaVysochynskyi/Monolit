@@ -9,7 +9,6 @@
   padding: 60px 0;
   position: relative;
   overflow: hidden;
-  cursor: grab;
 }
 .swiper__slides-wrapper {
   display: flex;
@@ -21,7 +20,7 @@
   width: 70%;
   height: 560px;
   transition: transform 0.4s ease, opacity 0.4s ease;
-  pointer-events: none;
+  user-select: none;
 }
 .swiper__slide iframe {
   width: 100%;
@@ -31,6 +30,7 @@
   transform: scale(0.75);
   opacity: 0.5;
   z-index: 0;
+  pointer-events: none;
 }
 .swiper__slide.active {
   z-index: 1;
