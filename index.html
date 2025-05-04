@@ -31,16 +31,16 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
-    <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/catalogue.css" />
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/slider.css" />
-    <link rel="stylesheet" href="styles/production.css" />
-    <link rel="stylesheet" href="styles/guarantee.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/catalogue.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/production.css" />
+    <link rel="stylesheet" href="./styles/guarantee.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <!-- Language -->
     <html lang="uk">
@@ -360,17 +360,52 @@
         </div>
 
         <div class="production__list">
-            <img src="./assets/images/production/1.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/2.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/3.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/4.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/5.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/6.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/7.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/8.webp" alt="Production image" class="production__img" loading="lazy">
-            <img src="./assets/images/production/9.webp" alt="Production image" class="production__img" loading="lazy">
+            <img src="./assets/images/production/small/1.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/2.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/3.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/4.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/5.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/6.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/7.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/8.webp" alt="Production image" class="production__img"
+                loading="lazy">
+            <img src="./assets/images/production/small/9.webp" alt="Production image" class="production__img"
+                loading="lazy">
         </div>
     </section>
+
+    <div class="modal" id="image-modal">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close" aria-label="Закрити">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="white" stroke="white" stroke-width="2" d="M18 6L6 18M6 6l12 12"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <img src="" alt="Modal image" id="modal-image">
+            <button class="modal__nav modal__prev" id="modal-prev" aria-label="Попереднє">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path fill="none" stroke="white" stroke-width="2" d="M15 6l-6 6 6 6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button class="modal__nav modal__next" id="modal-next" aria-label="Наступне">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path fill="none" stroke="white" stroke-width="2" d="M9 6l6 6-6 6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
 
 
     <!-- GUARANTEE -->
@@ -643,6 +678,7 @@
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/slider.js"></script>
+    <script src="./scripts/modal.js"></script>
 </body>
 
 </html>
